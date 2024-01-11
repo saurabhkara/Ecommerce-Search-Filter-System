@@ -1,0 +1,9 @@
+.ml {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.price-title {
+  margin-top: 20px;
+}
