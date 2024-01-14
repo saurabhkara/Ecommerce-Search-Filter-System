@@ -5,7 +5,7 @@ function Products({ products }) {
   return (
     <>
       <section className="card-container">
-        {products.map((item) => {
+        {products.map((item, index) => {
           const {
             img,
             title,
@@ -19,6 +19,7 @@ function Products({ products }) {
           } = item;
           return (
             <Card
+              key={index}
               img={img}
               title={title}
               star={star}

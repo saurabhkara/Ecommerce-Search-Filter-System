@@ -14,8 +14,8 @@ export default function Price() {
     <div className="ml">
       <h2 className="sidebar-title price-title">Price</h2>
       {priceObj.map((item) => {
-        const { id, label, name } = item;
-        return <Input key={id} label={label} name={name} />;
+        const { id, label } = item;
+        return <Input key={id} label={label} />;
       })}
     </div>
   );

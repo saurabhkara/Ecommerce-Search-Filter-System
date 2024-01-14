@@ -15,8 +15,8 @@ export default function Colors() {
     <div className="color-container">
       <h2 className="sidebar-title color-title">Colors</h2>
       {colorsObj.map((item) => {
-        const { id, label, name } = item;
-        return <Input key={id} label={label} name={name} />;
+        const { id, label } = item;
+        return <Input key={id} label={label} />;
       })}
     </div>
   );

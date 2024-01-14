@@ -9,7 +9,7 @@ const recommendationObj = [
   { id: 5, label: "Addidas" },
 ];
 
-function Recommended() {
+function Recommended({ handleClick }) {
   return (
     <>
       <div className="">
@@ -17,7 +17,7 @@ function Recommended() {
         <div className="recommended-flex">
           {recommendationObj.map((item) => {
             const { id, label } = item;
-            return <Button key={id} label={label} />;
+            return <Button key={id} label={label} handleClick={handleClick} />;
           })}
         </div>
       </div>

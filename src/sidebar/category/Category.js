@@ -35,8 +35,8 @@ export default function Category() {
       <h2 className="sidebar-title">Category</h2>
       <div>
         {categoryObj.map((item) => {
-          const { id, label, name } = item;
-          return <Input key={id} label={label} name={name} />;
+          const { id, label } = item;
+          return <Input key={id} label={label} />;
         })}
       </div>
     </div>

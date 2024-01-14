@@ -3,7 +3,7 @@ import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 
 import "./nav.css";
 
-function Nav() {
+function Nav({ handleInputChange }) {
   return (
     <nav>
       <div className="nav-container">
@@ -11,6 +11,7 @@ function Nav() {
           type="text"
           placeholder="Search your shoe"
           className="search-input"
+          onChange={handleInputChange}
         />
       </div>
       <div className="profile-container">
