@@ -27,6 +27,7 @@ function App() {
 
   //------Radio Filter--------
   const handleChange = (event) => {
+    console.log(event.target.value);
     setSelectedCategory(event?.target?.value);
   };
 
@@ -60,10 +61,10 @@ function App() {
 
   return (
     <>
-      <Sidebar />
+      <Sidebar handleChange={handleChange} />
       <Navigation handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
-      <Products products={products} />
+      <Products products={finalProducts} />
     </>
   );
 }

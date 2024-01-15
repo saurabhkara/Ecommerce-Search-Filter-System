@@ -1,9 +1,6 @@
-function Button({ label, handleClick }) {
-  const handleOnClick = () => {
-    handleClick(label);
-  };
+function Button({ label, handleClick, value }) {
   return (
-    <button className="btns" onClick={handleClick} value={label}>
+    <button className="btns" onClick={handleClick} value={value}>
       {label}
     </button>
   );
